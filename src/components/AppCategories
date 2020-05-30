@@ -1,0 +1,10 @@
+
+
+
+<div className="projectDiv socialProjectDiv">
+    <h3>Social Media Clones</h3>
+    <div className="socProj kwitProj">
+        <a href="https://kano-kenzie.gitlab.io/q2/assessment---kwitter-frontend/">Twitter</a>
+    </div>
+    <div className="socProj kanoProj">Kanogram Someday</div>
+</div>
