@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b3309ea2.chunk.css",
+    "main.js": "/static/js/main.4175f76d.chunk.js",
+    "main.js.map": "/static/js/main.4175f76d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6a79484d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6a79484d.js.map",
+    "static/js/2.f7731c78.chunk.js": "/static/js/2.f7731c78.chunk.js",
+    "static/js/2.f7731c78.chunk.js.map": "/static/js/2.f7731c78.chunk.js.map",
+    "static/js/3.61cd3467.chunk.js": "/static/js/3.61cd3467.chunk.js",
+    "static/js/3.61cd3467.chunk.js.map": "/static/js/3.61cd3467.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b3309ea2.chunk.css.map": "/static/css/main.b3309ea2.chunk.css.map",
+    "static/js/2.f7731c78.chunk.js.LICENSE.txt": "/static/js/2.f7731c78.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Merriweather-Regular.55c73e48.ttf",
+    "static/media/kanosface.92e60ebe.jpg": "/static/media/kanosface.92e60ebe.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a79484d.js",
+    "static/js/2.f7731c78.chunk.js",
+    "static/css/main.b3309ea2.chunk.css",
+    "static/js/main.4175f76d.chunk.js"
+  ]
+}
