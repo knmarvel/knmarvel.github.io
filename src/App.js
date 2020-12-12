@@ -37,9 +37,9 @@ function App() {
             Find me on the web:
           </p>
           <div className="social-media-links">
-            <a href="github.com/knmarvel">GitHub</a>
-            <a href="linkedin.com/in/kano-marvel">LinkedIn</a>
-            <a href="twitter.com/kanomarvel">Twitter</a>
+            <a href="https://github.com/knmarvel">GitHub</a>
+            <a href="https://linkedin.com/in/kano-marvel">LinkedIn</a>
+            <a href="https://twitter.com/kanomarvel">Twitter</a>
           </div>
         </div>
       </body>
