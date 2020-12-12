@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather';
+  src: local('Merriweather'), url(./assets/fonts/Merriweather/Merriweather-Regular.ttf) format('ttf');
+}
+
