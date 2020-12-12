@@ -2,7 +2,7 @@ import projectsList from "../../assets/projects/projects.js"
 import {ProjectSnapshot} from "../"
 
 function Modal(props){
-    if(props == "projects"){
+    if(props === "projects"){
         return(
             <>
                 <h2>

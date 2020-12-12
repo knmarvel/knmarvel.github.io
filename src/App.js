@@ -1,11 +1,11 @@
 import kanosface from './assets/pics/kanosface.jpg';
 import './App.css';
 import {Helmet} from "react-helmet"
-import {useState} from 'react'
+// import {useState} from 'react'
 import {Button} from "./components"
 
 function App() {
-  const {openModal, setOpenModal} = useState({closed: null})
+  // const {openModal, setOpenModal} = useState({closed: null})
   return (
     
     <div className="App">
