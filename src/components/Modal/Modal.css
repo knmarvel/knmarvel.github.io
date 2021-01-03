@@ -1,0 +1,18 @@
+.Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 75%;
+    background-color: whitesmoke;
+    color: rgb(75, 73, 73);
+    border: 1px gray solid;
+    box-shadow: 5px 5px rgb(2, 2, 53);
+    overflow-y: scroll;
+}
+
+.Modal-closer{
+    float: right;
+    position: absolute;
+}

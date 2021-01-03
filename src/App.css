@@ -4,7 +4,9 @@
 
 .profile-pic {
   height: 40vmin;
-  pointer-events: none;
+  border-radius: 25%;
+  border: 1px gray solid;
+  margin-right: 5px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

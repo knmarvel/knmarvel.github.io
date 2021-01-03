@@ -1,0 +1,10 @@
+.project-card{
+    background-color: wheat;
+    border: thin solid black;
+    margin: 5%;
+}
+
+.project-pic{
+    height: 20%;
+    width: 70%;
+}
