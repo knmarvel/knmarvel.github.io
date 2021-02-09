@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/knmarvel.github.io/static/css/main.1198f85f.chunk.css",
-    "main.js": "/knmarvel.github.io/static/js/main.4175f76d.chunk.js",
-    "main.js.map": "/knmarvel.github.io/static/js/main.4175f76d.chunk.js.map",
-    "runtime-main.js": "/knmarvel.github.io/static/js/runtime-main.d8638181.js",
-    "runtime-main.js.map": "/knmarvel.github.io/static/js/runtime-main.d8638181.js.map",
-    "static/js/2.f7731c78.chunk.js": "/knmarvel.github.io/static/js/2.f7731c78.chunk.js",
-    "static/js/2.f7731c78.chunk.js.map": "/knmarvel.github.io/static/js/2.f7731c78.chunk.js.map",
-    "static/js/3.61cd3467.chunk.js": "/knmarvel.github.io/static/js/3.61cd3467.chunk.js",
-    "static/js/3.61cd3467.chunk.js.map": "/knmarvel.github.io/static/js/3.61cd3467.chunk.js.map",
-    "index.html": "/knmarvel.github.io/index.html",
-    "static/css/main.1198f85f.chunk.css.map": "/knmarvel.github.io/static/css/main.1198f85f.chunk.css.map",
-    "static/js/2.f7731c78.chunk.js.LICENSE.txt": "/knmarvel.github.io/static/js/2.f7731c78.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/knmarvel.github.io/static/media/Merriweather-Regular.55c73e48.ttf",
-    "static/media/kanosface.92e60ebe.jpg": "/knmarvel.github.io/static/media/kanosface.92e60ebe.jpg"
+    "main.css": "/static/css/main.8d6f1577.chunk.css",
+    "main.js": "/static/js/main.5a529e69.chunk.js",
+    "main.js.map": "/static/js/main.5a529e69.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e8cf3c98.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e8cf3c98.js.map",
+    "static/js/2.5516276d.chunk.js": "/static/js/2.5516276d.chunk.js",
+    "static/js/2.5516276d.chunk.js.map": "/static/js/2.5516276d.chunk.js.map",
+    "static/js/3.720b4902.chunk.js": "/static/js/3.720b4902.chunk.js",
+    "static/js/3.720b4902.chunk.js.map": "/static/js/3.720b4902.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8d6f1577.chunk.css.map": "/static/css/main.8d6f1577.chunk.css.map",
+    "static/js/2.5516276d.chunk.js.LICENSE.txt": "/static/js/2.5516276d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Merriweather-Regular.55c73e48.ttf",
+    "static/media/battleship.d1f2031d.png": "/static/media/battleship.d1f2031d.png",
+    "static/media/fakestagram.07f73642.png": "/static/media/fakestagram.07f73642.png",
+    "static/media/isslocator.7092c9e6.png": "/static/media/isslocator.7092c9e6.png",
+    "static/media/kanosface.92e60ebe.jpg": "/static/media/kanosface.92e60ebe.jpg",
+    "static/media/kwitter.cfed8fe8.png": "/static/media/kwitter.cfed8fe8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d8638181.js",
-    "static/js/2.f7731c78.chunk.js",
-    "static/css/main.1198f85f.chunk.css",
-    "static/js/main.4175f76d.chunk.js"
+    "static/js/runtime-main.e8cf3c98.js",
+    "static/js/2.5516276d.chunk.js",
+    "static/css/main.8d6f1577.chunk.css",
+    "static/js/main.5a529e69.chunk.js"
   ]
 }
