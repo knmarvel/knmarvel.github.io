@@ -4,22 +4,18 @@ import linkedinin from "./assets/pics/medialinks/LinkedIn-Logos/LI-In-Bug.png"
 import twitterCircle from "./assets/pics/medialinks/Twitter Social Icons/Twitter Social Icons/Twitter_SocialIcon_Circle/Twitter_Social_Icon_Circle_White.png"
 import './App.css';
 import {Helmet} from "react-helmet"
-import {useState} from 'react'
-import {Button} from "./components"
-import {Modal} from "./components"
+import {
+  ModalManager,
+  BlogLanding
+} from "./components"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
-  const [openModal, setOpenModal] = useState({"type": "closed"})
-
-  const handleModalOpen = (type) => {
-    if(openModal.type !== type){
-      setOpenModal(() => {return({"type": type})})
-    }
-    else{
-      setOpenModal(() => {return({"type": "closed"})})
-    }
-  }
-
   return (
     
     <div className="App">
@@ -33,29 +29,33 @@ function App() {
         <h2>
           Hi, I'm Kano Marvel, full stack web developer.
         </h2>
-        {openModal.type !== "closed" && <Modal type={openModal.type} click={handleModalOpen}/>}
       </header>
       <body>
-        <div className="buttons">
-          <Button 
-            type="projects" 
-            click={handleModalOpen}
-            >
-            Projects
-          </Button>
-          <Button
-            type="tech" 
-            click={handleModalOpen}
-          >
-            Tech Stack
-          </Button>
-          <Button
-            type="resume" 
-            click={handleModalOpen}
-          >
-            Resume
-          </Button>
-        </div>
+        <Router>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog">
+                  Blog
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
+          <Switch>
+            <Route path="/blog">
+              <BlogLanding/>
+            </Route>
+            <Route path="/">
+              <ModalManager/>
+            </Route>
+          </Switch>
+        </Router>
         <div className="find-me">
           <p>
             Find me elsewhere:
