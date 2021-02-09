@@ -1,0 +1,1 @@
+export { default as BlogPostDetail } from "./BlogPostDetail.js"

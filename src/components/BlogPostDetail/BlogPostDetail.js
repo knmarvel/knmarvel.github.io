@@ -1,5 +1,12 @@
-function BlogPostShort(props){
-    const blog = props.blog
+import ReactMarkdown from 'react-markdown'
+import blogs from "../../assets/blogs/blogs.json"
+import { v4 as uuidv4 } from 'uuid';
+
+// This {match} idea from https://dev.to/dsckiitdev/dynamic-pages-using-react-router-2pm
+
+const BlogPostDetail = ({ match }) => {
+    const blog = blogs.blogs[match.params.blogid - 1]
+
     return(
         <div className="blog-post-short">
             <h3 className="blog-post-short-title">
@@ -13,15 +20,15 @@ function BlogPostShort(props){
                     { blog["listening"]["title"]}
                 </a>
             </h4>
-            <p>
-                { blog.content.slice(0, 100)} <a href={`/blog/${props.id}`}>[...Read More]</a>
-            </p>
+                <ReactMarkdown>
+                    { blog.content }
+                </ReactMarkdown>
             <div className="blog-tags">
                 <h4>Tagged: </h4>
                 <ul>
                     {blog.tags.map(tag => {
                         return (
-                            <ul>
+                            <ul key={uuidv4()}>
                                 { tag }
                             </ul>
                         )
@@ -32,4 +39,4 @@ function BlogPostShort(props){
     )
 }
 
-export default BlogPostShort
+export default BlogPostDetail

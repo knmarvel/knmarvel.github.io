@@ -1,4 +1,6 @@
 export * from "./BlogLanding"
+export * from "./BlogPostDetail"
+export * from "./BlogPostShort"
 export * from "./Button"
 export * from "./Modal"
 export * from "./ModalManager"

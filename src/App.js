@@ -6,7 +6,8 @@ import './App.css';
 import {Helmet} from "react-helmet"
 import {
   ModalManager,
-  BlogLanding
+  BlogLanding,
+  BlogPostDetail
 } from "./components"
 import {
   BrowserRouter as Router,
@@ -18,7 +19,7 @@ import {
 function App() {
   return (
     
-    <div className="App">
+    <>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Kano Marvel's Portfolio</title>
@@ -31,6 +32,7 @@ function App() {
         </h2>
       </header>
       <body>
+            <div className="App">
         <Router>
           <nav>
             <ul>
@@ -48,6 +50,7 @@ function App() {
           </nav>
 
           <Switch>
+            <Route path="/blog/:blogid" component={BlogPostDetail}/>
             <Route path="/blog">
               <BlogLanding/>
             </Route>
@@ -72,8 +75,9 @@ function App() {
             </a>
           </div>
         </div>
+        </div>
       </body>
-    </div>
+    </>
   );
 }
 
