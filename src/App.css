@@ -9,11 +9,7 @@
   margin-right: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -30,11 +26,29 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:link {
+  color: #61dafb;
+}
+
+a:visited {
+  color: #96b7c0;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+a:active {
+  color: #03bef1;
+}
+
+nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  padding: 2px;
 }
