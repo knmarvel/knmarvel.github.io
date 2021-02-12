@@ -1,14 +1,22 @@
+:root {
+  --main-bg-color: #282c34;
+  --main-text-color: #53F4F4;
+  --highlight-color1: #EBFDFC;
+  --highlight-color2: #E6F4F1;
+  --lowlight-color: #4f9d9c;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
+  background-color: var(--main-bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--highlight-color1);
 }
 
 h1, h2, h3, h4, h5, h6 {

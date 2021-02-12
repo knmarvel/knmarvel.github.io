@@ -1,7 +1,7 @@
 .Button {
-    color:beige;
-    background-color: rgb(36, 36, 206);
-    border: solid black .1px;
+    color: var(--highlight-color2);
+    background-color: var(--lowlight-color);
+    border: solid var(--main-text-color) .1px;
     box-shadow: 2px 2px rgb(1, 1, 49);
     border-radius: 15%;
     margin: 5px;

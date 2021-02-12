@@ -1,5 +1,5 @@
 .blog-post-short{
-    border: 1px solid whitesmoke;
+    border: 1px solid var(--main-text-color);
     display: flex; 
     flex-direction: column;
     align-items: flex-start;
