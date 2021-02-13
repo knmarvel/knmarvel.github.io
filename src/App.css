@@ -1,9 +1,47 @@
 .App {
   text-align: center;
+  border: 5px solid var(--main-text-color);
+  border-top-right-radius: 2% 90%;
+  border-top-left-radius: 5% 1%;
+  border-bottom-left-radius: 10% 5%;
+  border-bottom-right-radius: 1% 70%;
+  width: 80%;
+  height: 10em;
+}
+
+.connection {
+  text-align: center;
+  border: 2px solid var(--main-text-color);
+  border-top-right-radius: 2% 90%;
+  border-top-left-radius: 5% 1%;
+  border-bottom-left-radius: 10% 5%;
+  border-bottom-right-radius: 1% 70%;
+  width: 10%;
+  height: 1em;
+}
+
+.tabletop {
+  text-align: center;
+  border: 2px solid var(--main-text-color);
+  border-top-right-radius: 2% 90%;
+  border-top-left-radius: 5% 1%;
+  border-bottom-left-radius: 10% 5%;
+  border-bottom-right-radius: 1% 70%;
+  width: 95%;
+  height: 5em;
+  display: flex;
+}
+
+.find-me {
+  display: flex;
+}
+
+.social-media-links {
+  display: flex;
 }
 
 .profile-pic {
-  height: 40vmin;
+  height: 5em;
   border-radius: 25%;
   border: 1px gray solid;
   margin-right: 5px;

@@ -19,8 +19,7 @@ body {
   color: var(--highlight-color1);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather';
-  src: local('Merriweather'), url(./assets/fonts/Merriweather/Merriweather-Regular.ttf) format('ttf');
+a, h1, h2, h3, h4, h5, button {
+  font-family: 'Architects Daughter', cursive;
 }
 

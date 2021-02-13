@@ -5,9 +5,9 @@
     transform: translate(-50%, -50%);
     height: 90%;
     width: 75%;
-    background-color: whitesmoke;
-    color: rgb(75, 73, 73);
-    border: 1px gray solid;
+    background-color: var(--lowlight-color);
+    color: var(--background-color);
+    border: 1px var(--lowlight-color) solid;
     box-shadow: 5px 5px rgb(2, 2, 53);
     overflow-y: scroll;
 }

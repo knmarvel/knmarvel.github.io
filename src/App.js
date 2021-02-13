@@ -24,6 +24,8 @@ function App() {
         <meta charSet="utf-8" />
         <title>Kano Marvel's Portfolio</title>
         <link rel="canonical" href="https://knmarvel.github.io" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans&display=swap" rel="stylesheet"></link>
       </Helmet>
       <header className="App-header">
         <img src={kanosface} className="profile-pic" alt="Kano's Face" />
@@ -32,49 +34,52 @@ function App() {
         </h2>
       </header>
       <body>
-            <div className="App">
-        <Router>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog">
-                  Blog
-                </Link>
-              </li>
-            </ul>
-          </nav>
-
-          <Switch>
-            <Route path="/blog/:blogid" component={BlogPostDetail}/>
-            <Route path="/blog">
-              <BlogLanding/>
-            </Route>
-            <Route path="/">
-              <ModalManager/>
-            </Route>
-          </Switch>
-        </Router>
-        <div className="find-me">
-          <p>
-            Find me elsewhere:
-          </p>
-          <div className="social-media-links">
-            <a href="https://github.com/knmarvel">
-              <img src={marklight} alt="GitHub"/>
-            </a>
-            <a href="https://linkedin.com/in/kano-marvel">
-              <img height="32px" src={linkedinin} alt="LinkedIn"/>
-            </a>
-            <a href="https://twitter.com/kanomarvel">
-              <img height="32px" src={twitterCircle} alt="Twitter"/>
-            </a>
-          </div>
+        <div className="App">
+          Hi I'm taking up space
+          <Router>
+            <nav>
+              <ul>
+                <li>
+                  <Link to="/">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/blog">
+                    Blog
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+            <Switch>
+              <Route path="/blog/:blogid" component={BlogPostDetail}/>
+              <Route path="/blog">
+                <BlogLanding/>
+              </Route>
+              <Route path="/">
+                <ModalManager/>
+              </Route>
+            </Switch>
+          </Router>
         </div>
+        <div className="connection"/>
+        <div className="tabletop">
+          <div className="find-me">
+            <p>
+              Find me elsewhere:
+            </p>
+            <div className="social-media-links">
+              <a href="https://github.com/knmarvel">
+                <img src={marklight} alt="GitHub"/>
+              </a>
+              <a href="https://linkedin.com/in/kano-marvel">
+                <img height="32em" src={linkedinin} alt="LinkedIn"/>
+              </a>
+              <a href="https://twitter.com/kanomarvel">
+                <img height="32em" src={twitterCircle} alt="Twitter"/>
+              </a>
+            </div>
+          </div>
         </div>
       </body>
     </>

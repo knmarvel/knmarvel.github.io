@@ -1,6 +1,6 @@
 .project-card{
-    background-color: wheat;
-    border: thin solid black;
+    background-color: var(--lowlight-color);
+    border: thin solid var(--main-bg-color);
     margin: 5%;
 }
 
