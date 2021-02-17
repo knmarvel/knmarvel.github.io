@@ -35,7 +35,6 @@ function App() {
       </header>
       <body>
         <div className="App">
-          Hi I'm taking up space
           <Router>
             <nav>
               <ul>
@@ -65,9 +64,6 @@ function App() {
         <div className="connection"/>
         <div className="tabletop">
           <div className="find-me">
-            <p>
-              Find me elsewhere:
-            </p>
             <div className="social-media-links">
               <a href="https://github.com/knmarvel">
                 <img src={marklight} alt="GitHub"/>

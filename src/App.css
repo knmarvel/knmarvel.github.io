@@ -7,6 +7,7 @@
   border-bottom-right-radius: 1% 70%;
   width: 80%;
   height: 10em;
+  overflow-y: auto;
 }
 
 .connection {
@@ -28,7 +29,7 @@
   border-bottom-left-radius: 10% 5%;
   border-bottom-right-radius: 1% 70%;
   width: 95%;
-  height: 5em;
+  height: 2em;
   display: flex;
 }
 
@@ -47,18 +48,6 @@
   margin-right: 5px;
 }
 
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 50vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
