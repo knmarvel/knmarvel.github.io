@@ -1,12 +1,12 @@
 import ReactMarkdown from 'react-markdown'
 import blogs from "../../assets/blogs/blogs.json"
 import { v4 as uuidv4 } from 'uuid';
+import * as blogContents from "../../assets"
 
 // This {match} idea from https://dev.to/dsckiitdev/dynamic-pages-using-react-router-2pm
 
 const BlogPostDetail = ({ match }) => {
     const blog = blogs.blogs[match.params.blogid - 1]
-
     return(
         <div className="blog-post-short">
             <h3 className="blog-post-short-title">
@@ -20,8 +20,7 @@ const BlogPostDetail = ({ match }) => {
                     { blog["listening"]["title"]}
                 </a>
             </h4>
-                <ReactMarkdown>
-                    { blog.content }
+                <ReactMarkdown source={ blogContents[blog.content] }>
                 </ReactMarkdown>
             <div className="blog-tags">
                 <h4>Tagged: </h4>

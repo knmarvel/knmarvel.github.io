@@ -4,7 +4,6 @@ function ProjectSnapshot(props){
     return(
         <div className="project-card">
             <h3 className="project-name">
-                {console.log(props)}
                 {props.project[0]}
             </h3>
             <div className="project-info">

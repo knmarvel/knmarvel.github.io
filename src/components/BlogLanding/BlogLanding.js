@@ -18,7 +18,6 @@ export default function BlogLanding(){
     return(<>
             {blogs && 
                 <div>
-                    {console.log(blogs.blogs.reverse())}
                     {blogs.blogs.reverse().map((blog, key) => <BlogPostShort key={uuidv4()} id={key + 1} blog={blog}/>)}
                 </div>
             }

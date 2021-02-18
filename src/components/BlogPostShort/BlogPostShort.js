@@ -1,7 +1,10 @@
 import "./BlogPostShort.css"
+import * as blogContents from "../../assets"
+
 
 function BlogPostShort(props){
     const blog = props.blog
+
     return(
         <div className="blog-post-short">
             <div className="blog-post-short-header">
@@ -16,7 +19,7 @@ function BlogPostShort(props){
                 </h4>
             </div>
             <p className="blog-post-content">
-                { blog.content.slice(0, 100)} <a href={`/blog/${props.id}`}>[...Read More]</a>
+                { blogContents[blog.content].replace("#\*", "").slice(0, 100)} <a href={`/blog/${props.id}`}>[...Read More]</a>
             </p>
             <div className="blog-tags">
                 <h4>Tagged: </h4>
