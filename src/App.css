@@ -127,15 +127,15 @@ nav > ul > li {
 }
 
 .handle-true{
-  background-color: var(--main-text-color);
-  box-shadow: inset  .1em 0 0 .1em var(--highlight-color1);
+  background-color: var(--highlight-color2);
+  box-shadow: inset  .2em 0 0 .1em var(--main-text-color);
 
 }
 
 
 .handle-false {
   background-color: var(--main-text-color);
-  box-shadow: inset  .1em .1em var(--highlight-color1);
+  box-shadow: inset  0 0 .8em 0 var(--highlight-color1);
 
 }
 
