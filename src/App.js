@@ -41,6 +41,9 @@ function App() {
   const [scheme, setScheme] = useState("wireframe")
   const toggleLight = () => {
     setLight((prev) => {return !prev})
+    if(1==2){
+      setScheme("disco")
+    }
   }
 
   useEffect(() => {
