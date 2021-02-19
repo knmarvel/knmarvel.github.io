@@ -18,19 +18,19 @@ const [openModal, setOpenModal] = useState({"type": "closed"})
   {openModal.type !== "closed" && <Modal type={openModal.type} click={handleModalOpen}/>}
         <div className="buttons">
           <Button 
-            type="projectsbutton" 
+            type="projects" 
             click={handleModalOpen}
             >
             Projects
           </Button>
           <Button
-            type="techbutton" 
+            type="tech" 
             click={handleModalOpen}
           >
             Tech Stack
           </Button>
           <Button
-            type="resumebutton" 
+            type="resume" 
             click={handleModalOpen}
           >
             Resume
