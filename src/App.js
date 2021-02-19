@@ -15,8 +15,39 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { useState, useEffect } from "react"
+
+const schemes = {
+  wireframe: {
+    false: {
+      '--main-bg-color': '#282c34', 
+      '--main-text-color': '#53F4F4',
+      '--highlight-color1': '#EBFDFC',
+      '--highlight-color2': '#E6F4F1',
+      '--lowlight-color': '#4f9d9c',
+    },
+    true: {
+      '--main-bg-color': '#EBFDFC', 
+      '--main-text-color': '#53F4F4',
+      '--highlight-color1': '#282c34',
+      '--highlight-color2': '#E6F4F1',
+      '--lowlight-color': '#4f9d9c',
+    }
+  }
+}
 
 function App() {
+  const [light, setLight] = useState(false)
+  const [scheme, setScheme] = useState("wireframe")
+  const toggleLight = () => {
+    setLight((prev) => {return !prev})
+  }
+
+  useEffect(() => {
+    Object.entries(schemes[scheme][light]).map(
+      ([key, val]) => document.documentElement.style.setProperty(key, val))
+  },[light, scheme])
+
   return (
     
     <>
@@ -27,11 +58,47 @@ function App() {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans&display=swap" rel="stylesheet"></link>
       </Helmet>
+      <div className="light-container">
+        <div className="light">
+          <div className="bead-container">
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+            <div className="bead"/>
+          </div>
+          <div className={`handle handle-${light}`} onClick={toggleLight}/>
+          </div>
+        </div>
       <header className="App-header">
         <img src={kanosface} className="profile-pic" alt="Kano's Face" />
         <h2>
           Hi, I'm Kano Marvel, full stack web developer.
         </h2>
+
       </header>
       <body>
         <div className="App">

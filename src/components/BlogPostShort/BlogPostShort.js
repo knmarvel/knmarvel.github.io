@@ -19,7 +19,7 @@ function BlogPostShort(props){
                 </h4>
             </div>
             <p className="blog-post-content">
-                { blogContents[blog.content].replace("#\*", "").slice(0, 100)} <a href={`/blog/${props.id}`}>[...Read More]</a>
+                { blogContents[blog.content].replace("#", "").slice(0, 100)} <a href={`/blog/${props.id}`}>[...Read More]</a>
             </p>
             <div className="blog-tags">
                 <h4>Tagged: </h4>
