@@ -92,6 +92,10 @@ nav > ul > li {
   align-items: flex-end;
   padding-right: 3em;
   padding-bottom: 1em;
+  z-index: 1;
+}
+.light-container > * {
+  z-index: 1;
 }
 
 .light{
