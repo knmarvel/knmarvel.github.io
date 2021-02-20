@@ -16,3 +16,8 @@
     float: right;
     position: absolute;
 }
+
+.resume-object > * {
+    height: 6000px;
+    width: 75%;
+}

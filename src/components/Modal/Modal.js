@@ -1,16 +1,15 @@
-import projectsList from "../../assets/projects/projects.js"
-import techsList from "../../assets/projects/techstack.js"
-import resumeList from "../../assets/projects/resume.js"
-import {Button} from "../"
-import {ProjectSnapshot} from "../"
-import "./Modal.css"
+import projectsList from "../../assets/projects/projects.js";
+// import techsList from "../../assets/projects/techstack.js";
+import resumePDF from "../../assets/projects/KanoMarvelDevResume202102.pdf";
+import {Button} from "../";
+import {ProjectSnapshot} from "../";
+import "./Modal.css";
 
 function Modal(props){ 
-    const whichList = () => {
-        return props.type === "projects" ? projectsList : props.type === "tech" ? techsList : resumeList
-    } 
+
     return(
         <div className="Modal">
+            
             <div className="Modal-closer">
                 <Button
                     className="modal-close-button"
@@ -23,7 +22,13 @@ function Modal(props){
             <h2>
                 My {props.type}.
             </h2>
-            {Object.entries(whichList()).map(x => <ProjectSnapshot type={props.type} project={x}/>)}
+            {props.type === "projects" && Object.entries(projectsList).map(x => <ProjectSnapshot type={props.type} project={x}/>)}
+            {props.type === "resume" && 
+            <>
+            <object height="90%" width="90%" className="resume-object" data={resumePDF} type="application/pdf" >
+                <p>Link to resume <a href="/public/KanoMarvelDevResume202102">to the PDF!</a></p>
+            </object>
+               </>}
         </div>
     )
 
