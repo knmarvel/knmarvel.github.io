@@ -1,6 +1,6 @@
 import projectsList from "../../assets/projects/projects.js";
 // import techsList from "../../assets/projects/techstack.js";
-import resumePDF from "../../assets/projects/KanoMarvelDevResume202102.pdf";
+import resumePDF from "../../assets/projects/KanoMarvelDevResume202102fortheWeb.pdf";
 import {Button} from "../";
 import {ProjectSnapshot} from "../";
 import "./Modal.css";
@@ -26,7 +26,7 @@ function Modal(props){
             {props.type === "resume" && 
             <>
             <object height="90%" width="90%" className="resume-object" data={resumePDF} type="application/pdf" >
-                <p>Link to resume <a href="/public/KanoMarvelDevResume202102">to the PDF!</a></p>
+                <p>Link to resume <a href="/public/KanoMarvelDevResume202102fortheWeb.pdf">to the PDF!</a></p>
             </object>
                </>}
         </div>
