@@ -6,14 +6,12 @@ import './App.css';
 import {Helmet} from "react-helmet"
 import {
   ModalManager,
-  BlogLanding,
-  BlogPostDetail
+  LightSwitch
 } from "./components"
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import { useState, useEffect } from "react"
 
@@ -28,7 +26,7 @@ const schemes = {
     },
     true: {
       '--main-bg-color': '#EBFDFC', 
-      '--main-text-color': '#53F4F4',
+      '--main-text-color': '#213b70',
       '--highlight-color1': '#282c34',
       '--highlight-color2': '#E6F4F1',
       '--lowlight-color': '#4f9d9c',
@@ -41,6 +39,9 @@ function App() {
   const [scheme, setScheme] = useState("wireframe")
   const toggleLight = () => {
     setLight((prev) => {return !prev})
+    /* This next line is what's known as a "pro gamer" move. XD
+       It solves the current problem of "setScheme is declared but never used"
+       that npm build throws out. I will someday use setScheme. But not this day. */
     if(1==2){
       setScheme("disco")
     }
@@ -61,41 +62,7 @@ function App() {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans&display=swap" rel="stylesheet"></link>
       </Helmet>
-      <div className="light-container">
-        <div className="light">
-          <div className="bead-container">
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-            <div className="bead"/>
-          </div>
-          <div className={`handle handle-${light}`} onClick={toggleLight}/>
-          </div>
-        </div>
+      <LightSwitch light={light} toggleLight={toggleLight}/>
       <header className="App-header">
         <img src={kanosface} className="profile-pic" alt="Kano's Face" />
         <h2>
@@ -106,25 +73,7 @@ function App() {
       <body>
         <div className="App">
           <Router>
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/blog">
-                    Blog
-                  </Link>
-                </li>
-              </ul>
-            </nav>
             <Switch>
-              <Route path="/blog/:blogid" component={BlogPostDetail}/>
-              <Route path="/blog">
-                <BlogLanding/>
-              </Route>
               <Route path="/">
                 <ModalManager/>
               </Route>

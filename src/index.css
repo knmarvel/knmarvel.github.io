@@ -6,6 +6,15 @@
   --lowlight-color: #4f9d9c;
 }
 
+#root > .handle {
+  cursor: -webkit-grab;
+  white-space: pre;
+
+}
+#root > .handle {
+  cursor: -webkit-grabbing;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
