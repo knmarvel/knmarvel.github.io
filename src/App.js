@@ -84,6 +84,7 @@ function App() {
         <div className="tabletop">
           <div className="find-me">
             <div className="social-media-links">
+              <p>OK!</p>
               <a href="https://github.com/knmarvel">
                 <img src={marklight} alt="GitHub"/>
               </a>
